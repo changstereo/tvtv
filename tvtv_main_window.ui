@@ -449,6 +449,19 @@
      <string>조회시작</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButton_login">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>10</y>
+      <width>251</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>로그인</string>
+    </property>
+   </widget>
    <zorder>frame</zorder>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
@@ -468,6 +481,7 @@
    <zorder>label_18</zorder>
    <zorder>lineEdit_13</zorder>
    <zorder>pushButton_view</zorder>
+   <zorder>pushButton_login</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">

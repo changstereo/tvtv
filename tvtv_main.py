@@ -16,12 +16,16 @@ form_class = uic.loadUiType("tvtv_main_window.ui")[0]
 class MyWindow(QMainWindow, form_class):
     def __init__(self):
         super().__init__()
-
-        kw = Kiwoom()
-
-        kw.comm_connect()
-
         self.setupUi(self)
+
+        kiwoom = Kiwoom()
+
+        self.pushButton_login.clicked.connect(self.pushButton_login_clicked)
+
+    def pushButton_login_clicked(self):
+        kiwoom.comm_connect()
+
+
 
 
 
