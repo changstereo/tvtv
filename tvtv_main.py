@@ -1,8 +1,6 @@
+
 from PyQt5 import uic
 from kiwoom import *
-
-###### import kiwoom
-###### MyWindow의 생성자에 넣어서 사용하면 됨
 
 #main window by designer import
 form_class = uic.loadUiType("tvtv_main_window.ui")[0]
@@ -23,6 +21,7 @@ class MyWindow(QMainWindow, form_class):
     def pushButton_login_clicked(self):
         self.kw.comm_connect()
 
+
     def pushButton_view_by_code_clicked(self):
         pass
 
@@ -32,8 +31,8 @@ class MyWindow(QMainWindow, form_class):
     def pushButton_consell_clicked(self):
         pass
 
-    def setupUI(self):
-        pass
+#    def setupUI(self):
+ #       pass
 
 
 if __name__ == "__main__":
