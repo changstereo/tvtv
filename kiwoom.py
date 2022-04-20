@@ -139,7 +139,10 @@ class Kiwoom(QAxWidget):
         return self.pbr
 
     def buy(self, account, code, quantity, price, hoga_type):
+        # 커밋 테스트용 주석 추가
         self.send_order("send_order_req", "0101", account, 1, code, quantity, price, hoga_type, "")
+
+
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
